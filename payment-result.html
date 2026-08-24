@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Payment Result — Chotlicious</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main style="min-height:100vh;display:grid;place-items:center;padding:30px">
+  <section class="success" style="max-width:600px;background:#fff5e7;border-radius:30px;padding:55px;box-shadow:0 25px 70px rgba(44,27,23,.15)">
+    <div class="success-icon">✓</div>
+    <p class="kicker">PAYMENT RESULT</p>
+    <h2>Thanks for shopping.</h2>
+    <p id="statusText">Your payment provider has returned you to Chotlicious. The final order status should be confirmed from the server callback, not from this browser page alone.</p>
+    <a class="btn btn-dark" href="/">Back to Chotlicious</a>
+  </section>
+</main>
+<script>
+const p=new URLSearchParams(location.search);
+const paid=p.get("billplz[paid]");
+if(paid==="true") document.getElementById("statusText").textContent="Payment was reported as paid by the gateway redirect. Your order should still be confirmed from the server-side callback.";
+else if(paid==="false") document.getElementById("statusText").textContent="The payment was not completed. You can return to the shop and try again.";
+</script>
+</body>
+</html>
