@@ -1,7 +1,7 @@
 const PRODUCTS=[
-{id:"coco-ball",name:"Coco Ball",price:10,image:"assets/coco-ball.jpeg",desc:"Round crunchy bites coated in rich melted chocolate."},
-{id:"mini-coco-crunch",name:"Mini Coco Crunch",price:10,image:"assets/mini-coco-crunch.jpg",desc:"Mini crispy pieces covered in smooth chocolate for extra crunch."},
-{id:"coco-rice",name:"Coco Rice",price:10,image:"assets/coco-rice.jpeg",desc:"Crispy rice pieces coated in creamy, indulgent chocolate."}
+ {id:"coco-ball",name:"Coco Ball",price:10,image:"assets/coco-ball-latest.webp",desc:"Round crunchy bites coated in rich melted chocolate."},
+ {id:"mini-coco-crunch",name:"Mini Coco Crunch",price:10,image:"assets/mini-coco-crunch-latest.webp",desc:"Mini crispy pieces covered in smooth chocolate for extra crunch."},
+ {id:"coco-rice",name:"Coco Rice",price:10,image:"assets/coco-rice-latest.webp",desc:"Crispy rice pieces coated in creamy, indulgent chocolate."}
 ];
 let cart=JSON.parse(localStorage.getItem("chotliciousCart")||"{}");
 const $=s=>document.querySelector(s);const money=n=>`RM${n.toFixed(2)}`;

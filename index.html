@@ -42,26 +42,23 @@
         <div class="hero-note"><span>RM10 PER JAR</span><i></i><span>3 CRUNCHY FAVOURITES</span></div>
       </div>
 
-      <div class="hero-art" aria-label="Chotlicious three cocojar flavours">
+      <!-- V3: replaced the old three-image hero cluster with the supplied Chocojar V2 cutout -->
+      <div class="hero-art" aria-label="Chotlicious Cocojar hero image">
         <div class="wash wash-pink"></div>
         <div class="wash wash-green"></div>
-        <div class="sparkle s1">✦</div><div class="sparkle s2">✧</div><div class="sparkle s3">·</div>
-        <div class="jar jar-back">
-          <img src="assets/mini-coco-crunch.jpg" alt="Mini Coco Crunch">
-          <span>Mini Coco Crunch</span>
+        <div class="lace-accent"></div>
+        <img class="hero-cocojar" src="assets/chocojar-v2.webp" alt="Chotlicious chocolate-coated cocojar">
+        <div class="hero-caption">
+          <span class="caption-script">Chocolate joy</span>
+          <strong>RM10 / JAR</strong>
         </div>
-        <div class="jar jar-main">
-          <img src="assets/coco-ball.jpeg" alt="Coco Ball">
-          <span>Coco Ball</span>
-        </div>
-        <div class="jar jar-side">
-          <img src="assets/coco-rice.jpeg" alt="Coco Rice">
-          <span>Coco Rice</span>
-        </div>
+        <div class="sparkle s1">✦</div><div class="sparkle s2">✧</div>
       </div>
     </section>
 
-    <section class="ticker"><span>COCO BALL</span><b>✦</b><span>MINI COCO CRUNCH</span><b>✦</b><span>COCO RICE</span><b>✦</b><span>RM10 / JAR</span></section>
+    <section class="ticker">
+      <span>COCO BALL</span><b>✦</b><span>MINI COCO CRUNCH</span><b>✦</b><span>COCO RICE</span><b>✦</b><span>RM10 / JAR</span>
+    </section>
 
     <section class="about" id="about">
       <div class="section-intro">
@@ -71,13 +68,16 @@
       </div>
       <div class="feature-stack">
         <article class="feature-card pink">
-          <div class="feature-icon">♡</div><div><h3>Great Taste</h3><p>Crunchy bites wrapped in rich, melted chocolate for that sweet little moment.</p></div>
+          <div class="feature-icon">♡</div>
+          <div><h3>Great Taste</h3><p>Crunchy bites wrapped in rich, melted chocolate for that sweet little moment.</p></div>
         </article>
         <article class="feature-card cream">
-          <div class="feature-icon leaf">⌁</div><div><h3>Three Textures</h3><p>Choose round Coco Ball, tiny Mini Coco Crunch or crispy Coco Rice.</p></div>
+          <div class="feature-icon leaf">⌁</div>
+          <div><h3>Three Textures</h3><p>Choose round Coco Ball, tiny Mini Coco Crunch or crispy Coco Rice.</p></div>
         </article>
         <article class="feature-card green">
-          <div class="feature-icon">✧</div><div><h3>One Easy Checkout</h3><p>Browse, choose your quantity and continue to a secure hosted payment page.</p></div>
+          <div class="feature-icon">✧</div>
+          <div><h3>One Easy Checkout</h3><p>Browse, choose your quantity and continue to a secure hosted payment page.</p></div>
         </article>
       </div>
     </section>
@@ -85,7 +85,8 @@
     <section class="quality-band">
       <div class="quality-photo">
         <div class="photo-wash"></div>
-        <img src="assets/coco-ball.jpeg" alt="Chocolate-coated Coco Ball close-up">
+        <!-- V3: supplied Chocojar Side image -->
+        <img src="assets/chocojar-side.webp" alt="Chocojar side view coated in melted chocolate">
       </div>
       <div class="quality-copy">
         <p class="script-label">Made with love</p>
@@ -112,9 +113,18 @@
       <p class="script-label">The Chotlicious line-up</p>
       <h2>Three ways to get your<br><em>chocolate fix.</em></h2>
       <div class="offer-grid">
-        <article><div class="offer-image green-wash"><img src="assets/coco-ball.jpeg" alt="Coco Ball"></div><h3>Coco Ball</h3><p>Round, crunchy bites with a smooth chocolate coating.</p><a href="#shop">Shop flavour →</a></article>
-        <article><div class="offer-image pink-wash"><img src="assets/mini-coco-crunch.jpg" alt="Mini Coco Crunch"></div><h3>Mini Coco Crunch</h3><p>Small crispy pieces made for maximum crunch in every handful.</p><a href="#shop">Shop flavour →</a></article>
-        <article><div class="offer-image brown-wash"><img src="assets/coco-rice.jpeg" alt="Coco Rice"></div><h3>Coco Rice</h3><p>Light, crispy rice pieces covered in chocolatey goodness.</p><a href="#shop">Shop flavour →</a></article>
+        <article>
+          <div class="offer-image green-wash"><img src="assets/coco-ball-latest.webp" alt="Coco Ball"></div>
+          <h3>Coco Ball</h3><p>Round, crunchy bites with a smooth chocolate coating.</p><a href="#shop">Shop flavour →</a>
+        </article>
+        <article>
+          <div class="offer-image pink-wash"><img src="assets/mini-coco-crunch-latest.webp" alt="Mini Coco Crunch"></div>
+          <h3>Mini Coco Crunch</h3><p>Small crispy pieces made for maximum crunch in every handful.</p><a href="#shop">Shop flavour →</a>
+        </article>
+        <article>
+          <div class="offer-image brown-wash"><img src="assets/coco-rice-latest.webp" alt="Coco Rice"></div>
+          <h3>Coco Rice</h3><p>Light, crispy rice pieces covered in chocolatey goodness.</p><a href="#shop">Shop flavour →</a>
+        </article>
       </div>
     </section>
   </main>
@@ -122,7 +132,15 @@
   <footer>
     <div class="footer-brand"><span class="brand-script">Chotlicious</span><p>A little jar of chocolate happiness.</p></div>
     <div class="footer-links"><a href="#home">Home</a><a href="#about">Our Story</a><a href="#shop">Shop</a></div>
-    <small>© 2026 Chotlicious · Student e-commerce project</small>
+    <div class="footer-contact">
+      <div class="footer-social">
+        <strong>Follow us for updates</strong>
+        <a href="https://www.instagram.com/chotlicious.co/" target="_blank" rel="noopener">Instagram: @chotlicious.co</a>
+        <a href="https://www.facebook.com/chotlicious.co/" target="_blank" rel="noopener">Facebook: @chotlicious.co</a>
+      </div>
+      <div><strong>Care-line</strong><br><a href="tel:01121423575">011-2142 3575</a></div>
+      <small>© 2026 Chotlicious · Student e-commerce project</small>
+    </div>
   </footer>
 
   <aside class="drawer" id="cartDrawer" aria-hidden="true">
