@@ -2,7 +2,7 @@ const PRODUCTS=[
  {id:"coco-ball",name:"Coco Ball",price:8,image:"assets/coco-ball-v6.png",desc:"Round crunchy bites coated in rich melted chocolate."},
  {id:"mini-coco-crunch",name:"Mini Coco Crunch",price:8,image:"assets/mini-coco-crunch-v6.png",desc:"Mini crispy pieces covered in smooth chocolate for extra crunch."},
  {id:"coco-rice",name:"Coco Rice",price:8,image:"assets/coco-rice-v6.png",desc:"Crispy rice pieces coated in creamy, indulgent chocolate."},
- {id:"cookie-crunch",name:"Cookie Crunch",price:8,image:"image:"assets/cookie-crunch.png"",desc:"A limited-edition chocolate treat with a rich, creamy cookie crunch.",limited:true}
+ { id:"cookie-crunch", name:"Cookie Crunch", price:8, image:"assets/cookie-crunch.png", desc:"A limited-edition chocolate treat with a rich, creamy cookie crunch.", limited:true}
 ];
 
 const CONFIG=window.CHOTLICIOUS_CONFIG||{};
