@@ -91,7 +91,7 @@ nav{font-size:16px;font-weight:600}
 .showcase-copy p:not(.script-label){font-size:16px;line-height:1.8;color:#66534c;max-width:470px;margin:25px 0}
 .showcase-photo{min-height:390px;display:grid;place-items:center;border-radius:24px;background:linear-gradient(135deg,var(--green-light),var(--pink-light),#ead7ca);position:relative}
 .showcase-photo::before{content:"";position:absolute;inset:20px;border:1px dashed rgba(74,44,37,.18);border-radius:20px}
-.showcase-photo img{width:94%;max-height:440px;object-fit:contain;position:relative;z-index:2;filter:drop-shadow(0 25px 25px rgba(55,31,25,.18))}
+.showcase-photo img{width:94%;max-width:100%;max-height:380px;height:auto;object-fit:contain;position:relative;z-index:2;filter:drop-shadow(0 25px 25px rgba(55,31,25,.18))}
 
 .updates-section{max-width:1160px;margin:100px auto;padding:0 5vw}
 .updates-section .section-title h2{font-family:"Cormorant Garamond",serif;font-size:clamp(55px,6vw,80px);line-height:.9;margin:0;color:var(--brown-deep)}
@@ -153,7 +153,7 @@ nav{font-size:16px;font-weight:600}
 }
 @media(max-width:560px){
   .product-showcase{margin-left:5vw;margin-right:5vw;padding:15px}
-  .showcase-photo{min-height:260px}
+  .showcase-photo{min-height:260px}.showcase-photo img{max-height:240px}
   .social-callout{padding:30px 24px}
   .review-social-note{padding:35px 20px}
   .centered-social{display:grid}
